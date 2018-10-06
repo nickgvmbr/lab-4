@@ -78,6 +78,16 @@ a {
 
 }
 
+%bg {
+  background: {
+    color: $light;
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+
+}
+
 
 
 // header
@@ -149,8 +159,14 @@ a {
 // hero
 
 .hero {
-  background: $light;
+  @extend %bg;
   height: 600px;
+}
+
+#hero {
+  background: {
+    image: url('../images/table.jpg');
+  }
 }
 
 
@@ -181,7 +197,7 @@ a {
   display: flex;
 
   .tile {
-    background: $light;
+    @extend %bg;
     height: 300px;
     width: 50%;
 
@@ -191,6 +207,18 @@ a {
 
   }
 
+}
+
+#tile-l {
+  background: {
+    image: url('../images/plate.jpg');
+  }
+}
+
+#tile-r{
+  background: {
+    image: url('../images/table.jpg');
+  }
 }
 
 
@@ -212,7 +240,7 @@ a {
 // vid
 
 .vid {
-  background: $light;
+  @extend %bg;
   height: 400px;
   margin: 0 0 150px 0;
 
@@ -221,10 +249,16 @@ a {
   align-items: center;
 
   i {
-    color: $accent;
+    color: white;
     font-size: 50px;
   }
 
+}
+
+#vid {
+  background: {
+    image: url('../images/plate.jpg');
+  }
 }
 
 
