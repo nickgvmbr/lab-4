@@ -98,7 +98,7 @@ a {
   }
 
   .nav {
-    background: white;
+    background: azure;
 
     display: flex;
     align-items: center;
@@ -233,4 +233,86 @@ a {
 .footer {
   @extend .header;
   margin: 0 0 45px 0;
+}
+
+
+
+// media
+
+@media (max-width: 700px) {
+
+  // nav
+
+  .header {
+    display: block;
+
+    .logo {
+      display: none;
+    }
+
+    .nav {
+      justify-content: space-between;
+
+      &-links {
+        margin: 0;
+      }
+
+    }
+
+  }
+
+  // tiles
+
+  .tiles {
+    flex-direction: column;
+  
+    .tile {
+      width: 100%;
+      margin: 0;
+
+      &:last-child {
+        margin: 30px 0 0 0;
+      }
+
+    }
+
+  }
+
+  // vid
+
+  .vid {
+    height: 300px;
+  }
+
+  // hero
+
+  .hero {
+    height: 400px;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  // marg
+
+  .container {
+    .marg {
+      margin: 0 15px;
+    }
+
+  }
+
+  // links
+
+  .header {
+    .nav {
+      &-link {
+        margin: 0 15px 0 0;
+      }
+
+    }
+
+  }
+
 }
