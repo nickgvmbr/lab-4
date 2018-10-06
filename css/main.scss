@@ -170,3 +170,25 @@ a {
   }
 
 }
+
+
+
+// tiles
+
+.tiles {
+  background: seashell;
+
+  display: flex;
+
+  .tile {
+    background: $light;
+    height: 300px;
+    width: 50%;
+
+    &:last-child {
+      margin: 90px 0 0 30px;
+    }
+
+  }
+
+}
