@@ -205,3 +205,23 @@ a {
   }
 
 }
+
+
+
+// vid
+
+.vid {
+  background: $light;
+  height: 400px;
+  margin: 0 0 150px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    color: $accent;
+    font-size: 50px;
+  }
+
+}
